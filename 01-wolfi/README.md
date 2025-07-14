@@ -16,6 +16,7 @@
 - Distroless claim to be super secure, but they are notoriously difficult to debug.
 - Chainguard like to think of wolfi as all the good of alpine, debian, and distroless, without any of the bad.
 - Wolfi doesn't have desktop packages (KDE) or drivers. In fact, it defines one yaml file per package.
+- This way you don't have to do tarball surgery, or limit yourself to what's in the Alpine distro.
 
 ## Why not Alpine?
 

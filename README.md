@@ -1,8 +1,12 @@
 # Learn Supply Chain Security
 
-> All we can do is raise the bar. Even when you secure the supply chain end-to-end, all you've done is build a secure malware distribution system if someone decides to ship you malware.
+![Supply Chain Security](scs.jpg)
+
+> In security, all we can do is raise the bar. Even if the supply chain was secured end-to-end, all you've done is build a secure malware distributor if someone decides to ship you malware.
 
 The idea of a **supply chain** is the long chain of suppliers needs to product a factory's output. Physical supply chains are also a mess since the pandemic! Package managers (`npm` for JavaScript, `pip` for Python, `cargo` for Rust, etc.) automatically pull in hundreds if not thousands of direct and indirect (transitive) packages. Everything from cryptography to datepickers.
+
+If you want to make CVEs disappear, keeping **Alpine and package.json up-to-date** will get you most of the way there. What's left is the hard stuff to get rid of.
 
 Most open source maintainers are overworked volunteers. There are a lot of people you are trusting in that process. MIT: This software is provided "as is". If you use this, I owe you nothing. Don't expect or demand anything in return. All the risks are on you. I am not a supplier. There is no relationship. You are a racoon digging through dumpsters for free code.
 
