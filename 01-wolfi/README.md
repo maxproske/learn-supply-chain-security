@@ -17,4 +17,9 @@
 - Chainguard like to think of wolfi as all the good of alpine, debian, and distroless, without any of the bad.
 - Wolfi doesn't have desktop packages (KDE) or drivers. In fact, it defines one yaml file per package.
 
-- If you scan and get 50, nobody deals with that well if at all, and people will get numb to it. Well how many of those are real. I heard only 1% of CVEs in the wild can affect you.
+## Why not Alpine?
+
+- Alpine gets you a lot of the way there, but still has some rough edges.
+- **glibc** and **musl** (mshipped by Alpine for size) are 2 common implementations of the C standard library (libc). Applications don't talk to the OS or kerel directly, they go through this shim layer.
+- Alpine only keeps packages that belong to main for 2 years. So running `apk add nodejs=14` will fail when the mirror no longer carries that APK.
+- Scripts that assume a full-featured `sed` break

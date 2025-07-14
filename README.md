@@ -1,15 +1,17 @@
 # Learn Supply Chain Security
 
+> All we can do is raise the bar. Even when you secure the supply chain end-to-end, all you've done is build a secure malware distribution system if someone decides to ship you malware.
+
 The idea of a **supply chain** is the long chain of suppliers needs to product a factory's output. Physical supply chains are also a mess since the pandemic! Package managers (`npm` for JavaScript, `pip` for Python, `cargo` for Rust, etc.) automatically pull in hundreds if not thousands of direct and indirect (transitive) packages. Everything from cryptography to datepickers.
 
-Most open source maintainers are overworked volunteers. There are a lot of people you are trusting in that process! MIT: This software is provided "as is". If you use this, I owe you nothing. Don't expect or demand anything in return. All the risks are on you. I am not a supplier. There is no relationship. You are a racoon digging through dumpsters for free code.
+Most open source maintainers are overworked volunteers. There are a lot of people you are trusting in that process. MIT: This software is provided "as is". If you use this, I owe you nothing. Don't expect or demand anything in return. All the risks are on you. I am not a supplier. There is no relationship. You are a racoon digging through dumpsters for free code.
 
 ## Core concepts
 
 - **Supply Chain Security** protects the code and infrastructure turns an idea into running software.
 - Some regulators now demand it: Executive Order (EO) 14028 in the US, Cyber Resilience Act (CRA) in the EU.
-- **SLSA** (Supply-chain Levels for Software Artifacts) is a maturity framework.
-- **NIST SP 800** is an enterprise risk-management guidance for security handbooks.
+- **SLSA** (Supply-chain Levels for Software Artifacts) is a maturity framework. You can start a security noob at level 1, and work your way up.
+- **NIST SP 800** is a US enterprise risk-management guidance for security handbooks.
 - **CycloneDX** and **SPDX** are **SBOM** (Software Bill Of Materials) formats recommended in CISA.
 - **sigstore** and **cosign** are keyless artifact signing.
 - **in-toto** is a CNCF Graduated supply chain **attestation** framework.
@@ -25,7 +27,7 @@ Most open source maintainers are overworked volunteers. There are a lot of peopl
 - In 2017, NotPetya was compromised through malware inserted in their M.E.Doc updater, leading to $10B economic loss.
 - In 2020, SolarWinds was compromised through their Orion build server, infecting 18K customers.
 - In 2021, Codecov was compromised through their CI bash uploader, leaking the credentials of hundreds of orgs.
-- In 2024, xz-utils was narrowly thwarted when a malicious open source maintainer attempted to insert a backdoor. Over 15 Ubuntu packages depend on `xz`. Over 150 on Arch Linux. That's a really important hobby.
+- In 2024, **xz** was narrowly thwarted when a malicious open source maintainer attempted to insert a backdoor targetted at OpenSSH. It was only caught because ssh took 0.5 seconds longer, dubbed "500 ms to midnight". Ubuntu 24 LTS had 15 packages that depended on `xz-utils`, including git itself, and was delayed a week while they rebuilt.
 
 ## Continuous Security within the SDLC
 
@@ -43,6 +45,7 @@ flowchart LR
 ## Trivia
 
 - Post-quantum signing requirements will likely amend SLSA & EO 14028 guidance by 2027.
+- Containers are just tarballs and json. You can compile images without Docker in some programming language. But if you were to build a Node.js app on your Macbook today, there may be some native C libraries that haven't been cross-compiled correctly. There are techniques but it's difficult.
 
 ## TODO
 
