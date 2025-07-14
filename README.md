@@ -1,8 +1,8 @@
 # Learn Supply Chain Security
 
-The idea of a supply chain is the long chain of suppliers needs to product a factory's output. Package managers (`npm` for JavaScript, `pip` for Python, `cargo` for Rust, etc.) automatically pull in hundreds if not thousands of direct and indirect (transitive) packages. Everything from cryptography to datepickers.
+The idea of a **supply chain** is the long chain of suppliers needs to product a factory's output. Physical supply chains are also a mess since the pandemic! Package managers (`npm` for JavaScript, `pip` for Python, `cargo` for Rust, etc.) automatically pull in hundreds if not thousands of direct and indirect (transitive) packages. Everything from cryptography to datepickers.
 
-Most open source maintainers are overworked volunteers. MIT: This software is provided "as is". If you use this, I owe you nothing. Don't expect or demand anything in return. All the risks are on you. I am not a supplier. There is no relationship. You are a racoon digging through dumpsters for free code.
+Most open source maintainers are overworked volunteers. There are a lot of people you are trusting in that process! MIT: This software is provided "as is". If you use this, I owe you nothing. Don't expect or demand anything in return. All the risks are on you. I am not a supplier. There is no relationship. You are a racoon digging through dumpsters for free code.
 
 ## Core concepts
 
@@ -12,9 +12,10 @@ Most open source maintainers are overworked volunteers. MIT: This software is pr
 - **NIST SP 800** is an enterprise risk-management guidance for security handbooks.
 - **CycloneDX** and **SPDX** are **SBOM** (Software Bill Of Materials) formats recommended in CISA.
 - **sigstore** and **cosign** are keyless artifact signing.
-- **in-toto** is a supply-chain **attestation** framework.
+- **in-toto** is a CNCF Graduated supply chain **attestation** framework.
+- **Attestation** is a file format that contains metadata about what happens inside of a build. "The build input was: this repo, this commit, this make command, and got this binary with this hash."
 - **Trivy** (Aqua), **Scout** (Docker), and **Grype** (Anchore) are dependency/image scanners.
-- **OPA / Conftest** and **Kyverno** are used for policy enforcement.
+- **OPA / Conftest**, **Kyverno**, **Enforce** (Chainguard) are used for policy enforcement.
 - **FIPS** image variants means the US government is willing to deploy it in their organizations.
 - **Distroless** images don't include a package manager, web client (eg. curl), or even a shell.
 
@@ -47,6 +48,7 @@ flowchart LR
 
 - [ ] Chainguard
 - [ ] Cloudsmith
+- [ ] Scanners (in local, registry, production)
 
 ## Resources
 
