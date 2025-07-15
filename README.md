@@ -6,7 +6,7 @@
 
 The idea of a **supply chain** comes from manufacturing - it's the long chain of suppliers needs to produce a factory's output. Physical supply chains have been a mess since the pandemic, and software isn't much different.
 
-**Supply chain attacks are on the rise**, leaking Personally Identifiable Information (PII), inserting ransomware and backdoors into healthcare, finance, government, and energy sectors.
+**Supply chain attacks are on the rise**, leaking Personally Identifiable Information (PII), inserting ransomware and backdoors into healthcare, finance, government, and energy sectors, posing a **risk to human safety**.
 
 Modern package managers (npm for JavaScript, pip for Python, cargo for Rust) automatically pull in hundreds if not thousands of direct and indirect (**transitive**) packages from cryptography to datepickers.
 
@@ -17,7 +17,7 @@ Most open source maintainers are overworked volunteers. There are a lot of peopl
 ## Core concepts
 
 - **Supply Chain Security** protects the code and infrastructure turns an idea into running software.
-  - Some regulators now demand it: Executive Order (EO) 14028 in the US, Cyber Resilience Act (CRA) in the EU.
+  - Some regulators now demand it: a 20221 Executive Order (EO) 14028 in the US, Cyber Resilience Act (CRA) in the EU.
 - **SLSA** (Supply-chain Levels for Software Artifacts) is a maturity framework. You can start a security noob at level 1, and work your way up.
 - **NIST SP 800** is a US enterprise risk-management guidance for security handbooks.
 - **CycloneDX** and **SPDX** are **SBOM** (Software Bill Of Materials) formats recommended in CISA.
