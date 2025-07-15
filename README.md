@@ -2,18 +2,22 @@
 
 ![Supply Chain Security](scs.jpg)
 
-> In security, all we can do is raise the bar. Even if the supply chain was secured end-to-end, all you've done is build a secure malware distributor if someone decides to ship you malware.
+> _In security, all we can ever do is raise the bar. Even with a fully secure end-to-end supply chain, all you've done is build a super secure malware delivery system if someone upstream decides to ship you malware._
 
-The idea of a **supply chain** is the long chain of suppliers needs to product a factory's output. Physical supply chains are also a mess since the pandemic! Package managers (`npm` for JavaScript, `pip` for Python, `cargo` for Rust, etc.) automatically pull in hundreds if not thousands of direct and indirect (transitive) packages. Everything from cryptography to datepickers.
+The idea of a **supply chain** comes from manufacturing - it's the long chain of suppliers needs to produce a factory's output. Physical supply chains have been a mess since the pandemic, and software isn't much different.
 
-If you want to make CVEs disappear, keeping **Alpine and package.json up-to-date** will get you most of the way there. What's left is the hard stuff to get rid of.
+**Supply chain attacks are on the rise**, leaking Personally Identifiable Information (PII), inserting ransomware and backdoors into healthcare, finance, government, and energy sectors.
 
-Most open source maintainers are overworked volunteers. There are a lot of people you are trusting in that process. MIT: This software is provided "as is". If you use this, I owe you nothing. Don't expect or demand anything in return. All the risks are on you. I am not a supplier. There is no relationship. You are a racoon digging through dumpsters for free code.
+Modern package managers (npm for JavaScript, pip for Python, cargo for Rust) automatically pull in hundreds if not thousands of direct and indirect (**transitive**) packages from cryptography to datepickers.
+
+If you want to make most CVEs disappear, just **keeping Alpine and your package.json up-to-date** gets you most of the way there. What's left is the hard, trust-based stuff to get rid of.
+
+Most open source maintainers are overworked volunteers. There are a lot of people you are trusting in that process. The MIT license says: "This software is provided 'as is'". If you use this, I owe you nothing. Don't expect or demand anything in return. All the risks are on you. **I am not a supplier**, there is no relationship. You are a racoon digging through dumpsters for free code.
 
 ## Core concepts
 
 - **Supply Chain Security** protects the code and infrastructure turns an idea into running software.
-- Some regulators now demand it: Executive Order (EO) 14028 in the US, Cyber Resilience Act (CRA) in the EU.
+  - Some regulators now demand it: Executive Order (EO) 14028 in the US, Cyber Resilience Act (CRA) in the EU.
 - **SLSA** (Supply-chain Levels for Software Artifacts) is a maturity framework. You can start a security noob at level 1, and work your way up.
 - **NIST SP 800** is a US enterprise risk-management guidance for security handbooks.
 - **CycloneDX** and **SPDX** are **SBOM** (Software Bill Of Materials) formats recommended in CISA.
@@ -31,7 +35,7 @@ Most open source maintainers are overworked volunteers. There are a lot of peopl
 - In 2017, NotPetya was compromised through malware inserted in their M.E.Doc updater, leading to $10B economic loss.
 - In 2020, SolarWinds was compromised through their Orion build server, infecting 18K customers.
 - In 2021, Codecov was compromised through their CI bash uploader, leaking the credentials of hundreds of orgs.
-- In 2024, **xz** was narrowly thwarted when a malicious open source maintainer attempted to insert a backdoor targetted at OpenSSH. It was only caught because ssh took 0.5 seconds longer, dubbed "500 ms to midnight". Ubuntu 24 LTS had 15 packages that depended on `xz-utils`, including git itself, and was delayed a week while they rebuilt.
+- In 2024, **xz** was narrowly thwarted when a rogue maintainer nearly backdoored OpenSSH. It was only caught because ssh took 0.5 seconds longer, dubbed "500 ms to midnight". Ubuntu 24 LTS delayed its release due to 15 packages depending on xz, including git itself.
 
 ## Continuous Security within the SDLC
 
