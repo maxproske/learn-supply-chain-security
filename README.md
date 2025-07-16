@@ -24,7 +24,7 @@ Most open source maintainers are overworked volunteers. There are a lot of peopl
 - **sigstore** and **cosign** are keyless artifact signing.
 - **in-toto** is a CNCF Graduated supply chain **attestation** framework.
 - **Attestation** is a file format that contains metadata about what happens inside of a build. "The build input was: this repo, this commit, this make command, and got this binary with this hash."
-- **Trivy** (Aqua), **Scout** (Docker), and **Grype** (Anchore) are dependency/image scanners.
+- **Trivy** (Aqua), **Scout** (Docker), and **Grype** (Anchore, used by Chainguard because for false positive bias) are dependency/image scanners.
 - **OPA / Conftest**, **Kyverno**, **Enforce** (Chainguard) are used for policy enforcement.
 - **FIPS** image variants means the US government is willing to deploy it in their organizations.
 - **Distroless** images don't include a package manager, web client (eg. curl), or even a shell.
@@ -58,7 +58,7 @@ flowchart LR
 ## Memes
 
 - Build systems running on unpatched Jenkins machines under desks
-- The US Government 
+- The US Government
 
 ## TODO
 
