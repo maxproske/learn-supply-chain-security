@@ -58,12 +58,13 @@ flowchart LR
 ## Memes
 
 - Build systems running on unpatched Jenkins machines under desks
+- The US Government 
 
 ## TODO
 
-- [ ] Chainguard
-- [ ] Cloudsmith
-- [ ] Scanners (in local, registry, production)
+- [ ] Try Cloudsmith
+- [ ] Introduce scanners in local, registry & production
+- [ ] Contribute to a nascent tool (just coming into existence) like SBOM evaludator
 
 ## Resources
 

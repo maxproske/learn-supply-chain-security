@@ -8,6 +8,7 @@
 - Most SBOMs are still pretty rough—Chainguard Labs found only 1% of SBOMs from popular Docker containers met minimum requirements.
 - Some folks think SBOMs are too much work for too little gain, but adoption is growing fast. 88% of companies planned to use them by 2023.
 - SBOMs don’t fix vulnerabilities, but they make it way easier to find and fix what matters.
+- SBOMs should be generated **during build** rather than from records. GitHub Actions is one of few that provide support for this approach.
 
 ## Fun fact
 
@@ -22,3 +23,17 @@
 ## Are you a SBOM pessimist, optimist, or optimist?
 
 - I'm a **cautious optimist**. Are SBOMs the answer, or just more **digital paperwork**? Either way, they're here to stay. :)
+
+## SBOM Quality
+
+- **Not all SBOMs are created equal**.
+- Chainguard abalyzed 3,000 popular Docker containers and found 1% of SBOMBs met the **minimum required elements**.
+  - All 7 **data fields** (Author, timestamp, etc.)
+  - **Automation support** (1 of 3 SBOM formats that are machine readable _and_ human readable)
+  - **Practices and processes** including transitive dependencies and organizational documentation of any "known unknowns"
+- The minimum elements, judging on analysis of this dataset, are a high bar and no tools appear to consistently create minimum elements-compliant SBOMs.
+
+## Resources
+
+- https://github.com/spdx/ntia-conformance-checker
+- https://github.com/eBay/sbom-scorecard (Abandoned by eBay)
