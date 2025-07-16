@@ -55,6 +55,10 @@ flowchart LR
 - Post-quantum signing requirements will likely amend SLSA & EO 14028 guidance by 2027.
 - Containers are just tarballs and json. You can compile images without Docker in some programming language. But if you were to build a Node.js app on your Macbook today, there may be some native C libraries that haven't been cross-compiled correctly. There are techniques but it's difficult.
 
+## Memes
+
+- Build systems running on unpatched Jenkins machines under desks
+
 ## TODO
 
 - [ ] Chainguard
