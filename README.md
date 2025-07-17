@@ -22,6 +22,7 @@ Most open source maintainers are overworked volunteers. There are a lot of peopl
 - **NIST SP 800** is a US enterprise risk-management guidance for security handbooks.
 - **CycloneDX** and **SPDX** are **SBOM** (Software Bill Of Materials) formats recommended in CISA.
 - **sigstore** and **cosign** are keyless artifact signing.
+- **OIDC providers** are the "Log in with Google/GitHub" of online identity built on OAuth 2.0.
 - **in-toto** is a CNCF Graduated supply chain **attestation** framework.
 - **Attestation** is a file format that contains metadata about what happens inside of a build. "The build input was: this repo, this commit, this make command, and got this binary with this hash."
 - **Trivy** (Aqua), **Scout** (Docker), and **Grype** (Anchore, used by Chainguard because for false positive bias) are dependency/image scanners.
@@ -55,10 +56,12 @@ flowchart LR
 - Post-quantum signing requirements will likely amend SLSA & EO 14028 guidance by 2027.
 - Containers are just tarballs and json. You can compile images without Docker in some programming language. But if you were to build a Node.js app on your Macbook today, there may be some native C libraries that haven't been cross-compiled correctly. There are techniques but it's difficult.
 
-## Memes
+## Memes & Hard Truths
 
-- Build systems running on unpatched Jenkins machines under desks
 - The US Government
+- Build systems running on unpatched Jenkins machines under desks
+- Everything should be machine-readable
+- It only takes one mistake to sink a business.
 
 ## TODO
 
@@ -69,3 +72,4 @@ flowchart LR
 ## Resources
 
 - https://www.youtube.com/watch?v=yt0S_xN5b94
+- Continue where you left off: https://courses.chainguard.dev/vulnerability-management-certification/115402

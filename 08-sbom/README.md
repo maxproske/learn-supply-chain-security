@@ -2,7 +2,7 @@
 
 - A **Software Bill of Materials (SBOM)** lists every library and dependency that goes into your app.
 - Can't stop cyber attacks on their own.
-- **Machine-readable**. Allows scanners to **quickly identify** packages with known vulnerabilities. No scanning the container filesystem.
+- **Machine-readable**. Allows scanners to streamline the process to **quickly identify** packages with known vulnerabilities. No scanning the container filesystem.
 - Have been around since the early 2000s, but Google Trends skyrocketed in 2021 when an Executive Order was signed that **required** SBOMs for **selling software to the US government**.
 - 2 big standards: **SPDX** (Linux Foundation, 2011) and **CycloneDX**. SPDX started for license tracking, but now covers security and supply chain info too.
 - Most SBOMs are still pretty rough—Chainguard Labs found only 1% of SBOMs from popular Docker containers met minimum requirements.
