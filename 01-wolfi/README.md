@@ -4,6 +4,7 @@
 > 
 > ![Wolfi Octopus](https://i.imgur.com/C0Cynytm.jpeg)
 
+- The most critical parts of vulnerability management comes before scanning, triaging, and patching. **Base images** are the very first layer of software you use to create a container.
 - The `FROM` line of your Dockerfile does not tell you what's inside.
 - No base image is perfect. To reduce risk, organizations will add layers to harden a **golden base image** they maintain and scan. This is like doing the **plumbing** in your own house.
 - **Noisy scans** lead to **alert fatigue**. I would say 20 CVEs is the theoretical maximum for a team. If a scan returns 50+ CVEs, nobody will deal with it. Studies show 1% of CVEs are actually exploitable in real-world apps, so teams start to doubt if it's even a real threat.

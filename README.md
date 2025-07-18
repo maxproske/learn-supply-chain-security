@@ -71,7 +71,11 @@ flowchart LR
 - [ ] Introduce scanners in local, registry & production
 - [ ] Contribute to a nascent tool (just coming into existence) like SBOM evaluator
 
+## Ideas for DHI
+
+- STIG variant
+
 ## Resources
 
 - https://www.youtube.com/watch?v=yt0S_xN5b94
-- Continue where you left off: https://courses.chainguard.dev/vulnerability-management-certification/115701
+- Continue where you left off: https://courses.chainguard.dev/vulnerability-management-certification/115406
