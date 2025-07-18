@@ -64,6 +64,7 @@ flowchart LR
 - Everything should be machine-readable
 - It only takes one mistake to sink a business.
 - Engineers don't have the time to remediate CVEs while they are building products
+- Crack it open
 
 ## TODO
 

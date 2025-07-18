@@ -12,13 +12,15 @@
 
 ## What is distroless? You mean undistro?
 
-- A **Linux distribution** is the Linux kernel plus a bunch of third-party packages. When you use OpenSSL on alpine, you aren't getting that from directly from the OpenSSL maintainers, you're getting that from a distribution that may have applied a few patches and thrown it into their package manager.
+- A **Linux distribution** is the Linux **kernel** plus a bunch of third-party **packages**. When you use OpenSSL on alpine, you aren't getting that from directly from the OpenSSL maintainers, you're getting that from a distribution that may have applied a few patches and thrown it into their package manager.
+- In addition, Docker doesn't have a Linux kernel, instead relying on the host to provide this.
 - So if you think about it, wolfi is really an **undistro**
 - Containers don't package a Linux kernel (it uses the host's), therefore it's a distribution without Linux. It's **everything without Linux**. That gets into the "What is Linux? The kernel? The distribution? The package manager?" coversation which we'll skip.
 - Distroless claim to be super secure, but they are notoriously difficult to debug.
 - Chainguard like to think of wolfi as all the good of alpine, debian, and distroless, without any of the bad.
 - Wolfi doesn't have desktop packages (KDE) or drivers. In fact, it defines one yaml file per package.
 - This way you don't have to do tarball surgery, or limit yourself to what's in the Alpine distro.
+- Chainguard found Distroless images accumulate new CVEs 5-6x more slowly than their counterparts
 
 ## Why not Alpine?
 

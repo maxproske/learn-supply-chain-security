@@ -15,6 +15,7 @@
   - Why? (commission, commit #123 to resolve issue #7)
   - When? (Early Renaissance, 1752725636)
 
+- Provenance is obtained from attestation.
 - With proper provenance, you can instantly query your records to find every single piece of software that was built with the vulnerable version of log4j
 - Ideally this is **attached during build time**.
 - **Sigstore** helps with keyless artifact signing!
