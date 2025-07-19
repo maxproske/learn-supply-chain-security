@@ -30,6 +30,7 @@ Most open source maintainers are overworked volunteers. There are a lot of peopl
 - **FIPS** image variants means the US government is willing to deploy it in their organizations.
 - **Distroless** images don't include a package manager, web client (eg. curl), or even a shell.
 - **SARIF** (Static Analysis Results Interchange Format) is a json format standard for static analysis tool output
+- **Cyber Resilience Act (CRA)** could hold maintainers liable for open source inside Europe despite no contracts or compensation
 
 ## A brief history of notable supply-chain attacks
 
@@ -63,8 +64,9 @@ flowchart LR
 - Build systems running on unpatched Jenkins machines under desks
 - Everything should be machine-readable
 - It only takes one mistake to sink a business.
-- Engineers don't have the time to remediate CVEs while they are building products
+- Engineers don't have the time to remediate CVEs while they are innovating and building products
 - Crack it open
+- Security posture (ouch my back)
 
 ## TODO
 
@@ -74,8 +76,12 @@ flowchart LR
 
 ## Ideas for DHI
 
+- Managed dependencies from package.json
 - STIG variant
 
+## Unresolved questions
+
+- Most OSS is MIT/GPL. How does DHI meet SLA the maintainers aren't responsible for fixing it?
 ## Resources
 
 - https://www.youtube.com/watch?v=yt0S_xN5b94

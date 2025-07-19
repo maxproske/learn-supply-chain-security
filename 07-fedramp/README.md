@@ -3,7 +3,7 @@
 ![Regulations](https://i.imgur.com/fsvsN7L.jpeg)
 
 - The US government is using Executive Orders to raise the bar for software supply chain security.
-- **FedRAMP** (2022) requires US cloud providers to follow strict vulnerability rules.
+- **FedRAMP** (2022) requires **US cloud providers** to follow strict vulnerability rules.
   - Using **hardened** images (any not necessarily STIG) (a NIST 800-70 benchmark)
   - Scanning containers for vulnerabilities every 30 days
   - Tracking and remediating vulnerabilities on a deadline (eg. Critical/High in 30 days)
