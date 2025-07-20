@@ -1,5 +1,7 @@
 # SLSA
 
+> _Was born as a subproject of in-toto. It is an in-toto attestation._
+
 **SLSA** (pronounced "salsa") is an approachable security framework designed to protect the integrity of software supply chains that you can **incrementally** implement, starting from level 1.
 
 - **SLSA 2 would have been enough** to help prevent the **xz** attack, since the tarballs contained extra code not present in the commit.

@@ -11,8 +11,9 @@
 - SBOMs don’t fix vulnerabilities, but they make it way easier to find and fix what matters.
 - SBOMs should be generated **during build** rather than from records. GitHub Actions is one of few that provide support for this approach.
 
-## Fun fact
+## Fun facts
 
+- SBOMs are required when selling to a federal agency or **network‑connected medical devices**.
 - SPDX's original purpose was to track OSS license compliance, so companies that wanted to do the right thing — like being "all MIT" or "no GPL" didn't find themselves in hot water. 
 - Given OSS incorporate countless dependencies, it make sense to have trust issues! Devs and the US quickly recognized SBOMs could support other use cases
 - In 2008, Cisco was violating free software licenses by distributing software in its Linksys routers
@@ -28,7 +29,7 @@
 ## SBOM Quality
 
 - **Not all SBOMs are created equal**.
-- Chainguard abalyzed 3,000 popular Docker containers and found 1% of SBOMBs met the **minimum required elements**.
+- Chainguard abalyzed 3,000 popular Docker containers and found 1% of SBOMs met the **minimum required elements**.
   - All 7 **data fields** (Author, timestamp, etc.)
   - **Automation support** (1 of 3 SBOM formats that are machine readable _and_ human readable)
   - **Practices and processes** including transitive dependencies and organizational documentation of any "known unknowns"
