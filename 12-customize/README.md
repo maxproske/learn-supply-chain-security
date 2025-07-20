@@ -1,5 +1,8 @@
 # Customize
 
+- Rather than editing a Dockerfile, use the hardened image web interface to add or remove packages.
+- This way you maintain their CVE SLA.
+- (I don't like that the UI abstracts the build logic, but it is what it is.)
 - Chainguard maintains a private APK repo to **build directly from source**.
 - A platform or SRE team will pull zero-image and install some packages for developer experience (bash, curl). Then, application teams have no rules to what they pull in to make the application run.
 - Imagine you have a binary with curl as a dependency
