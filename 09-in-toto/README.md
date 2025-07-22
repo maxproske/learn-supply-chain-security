@@ -12,6 +12,7 @@
 
 - Created in 2016 by a NYU professor. Now a CNCF Graduated project.
 - **Cosign** is a widely‑used tool to **generate and verify** those attestations, but the concept and spec are tool‑agnostic.
+- Bridges the gap between "I reviewed the source code" to "I'm going to run this .exe someone said was from the source code"
 - Information collection (SPXD, CycloneDX) and discovery (Sigstore) all use this common format.
 
 # Legacy "layout & links" workflow

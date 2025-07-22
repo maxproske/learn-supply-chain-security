@@ -6,7 +6,7 @@
 
 The idea of a **supply chain** comes from manufacturing - it's the long chain of suppliers needs to produce a factory's output. Physical supply chains have been a mess since the pandemic, and software isn't much different.
 
-**Supply chain attacks are on the rise**, leaking Personally Identifiable Information (PII), inserting ransomware and backdoors into healthcare, finance, government, and energy sectors, posing a **risk to human safety**.
+**Supply chain attacks are on the rise**, leaking Personally Identifiable Information (PII), inserting ransomware and backdoors into healthcare, finance, government, and energy sectors, posing a **risk to human safety**. It's wack-a-mole, and it's not new - You don't get value out of time securing something that nobody is spending time attacking.
 
 Modern package managers (npm for JavaScript, pip for Python, cargo for Rust) automatically pull in hundreds if not thousands of direct and indirect (**transitive**) packages from cryptography to datepickers.
 
@@ -21,7 +21,7 @@ Most open source maintainers are overworked volunteers. There are a lot of peopl
 - **SLSA** (Supply-chain Levels for Software Artifacts) is a maturity framework. You can start a security noob at level 1, and work your way up.
 - **NIST SP 800** is a US enterprise risk-management guidance for security handbooks.
 - **CycloneDX** and **SPDX** are **SBOM** (Software Bill Of Materials) formats recommended in CISA.
-- **sigstore** and **cosign** are keyless artifact signing.
+- **Cosign** and **Sigstore** (Chainguard) are keyless artifact signing.
 - **OIDC providers** are the "Log in with Google/GitHub" of online identity built on OAuth 2.0.
 - **in-toto** is a CNCF Graduated supply chain **attestation** framework.
 - **Attestation** is a file format that contains metadata about what happens inside of a build. "The build input was: this repo, this commit, this make command, and got this binary with this hash."
@@ -60,7 +60,8 @@ flowchart LR
 
 ## Memes & Hard Truths
 
-- The US Government
+- The US Government. They are the largest buyer of software and are ushering in compliance mandates. But breakneck speed for the govt is glacial for developers
+- US is competing with China for AI, and Europe is leading in regulation.
 - Build systems running on unpatched Jenkins machines under desks
 - Everything should be machine-readable
 - It only takes one mistake to sink a business.
