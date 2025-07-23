@@ -34,7 +34,9 @@
   - Why? (commission, commit #123 to resolve issue #7)
   - When? (Early Renaissance, 1752725636)
 
-- Provenance is obtained from attestation.
+- Provenance is obtained from an attestation predicate.
+- **Min provenance** gives timestamp, frontend used (Dockerfile), BuildKit version (No build args)
+- **Max provennance** gives that plus **build args** (be careful or use secrets!)
 - With proper provenance, you can instantly query your records to find every single piece of software that was built with the vulnerable version of log4j
 - Ideally this is **attached during build time**.
 - **Sigstore** helps with keyless artifact signing!

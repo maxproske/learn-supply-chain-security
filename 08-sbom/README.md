@@ -13,6 +13,8 @@
 
 ## Fun facts
 
+- In a multistage Docker build, by default all SBOM tools only analyze the **final image**, not the intermediate stages. So I could still copy an SBOM into it. If you put `ARG BUILDKIT_SBOM_SCAN_STAGE=true` above `FROM` it will apply to all stages.
+- SBOM won't know about compiled from source.
 - SBOMs are required when selling to a federal agency or **network‑connected medical devices**.
 - SPDX's original purpose was to track OSS license compliance, so companies that wanted to do the right thing — like being "all MIT" or "no GPL" didn't find themselves in hot water. 
 - Given OSS incorporate countless dependencies, it make sense to have trust issues! Devs and the US quickly recognized SBOMs could support other use cases
