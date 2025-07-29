@@ -37,3 +37,9 @@ ko build .
 4. **GCT Distroless** is built with **Bazel**. Basically took Debian and hacked things out.
 
 5. Chainguard uses their own build tool **Apko** with the Wolfi (and Alpine) OS
+
+6. **Buildkit** is the engine underpinning docker build. It's powerful but Dockerfile frontends just scratch the surface.
+
+7. **Dagger** is built ontop of Buildkit and takes full advantage. Designed for CI/CD but it works differently locally. 20 commits later and you're pulling your hair out.
+
+Allows you to define your build pipeline as code.
